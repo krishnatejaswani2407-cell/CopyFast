@@ -1,0 +1,22 @@
+COPYFAST MODULE-II PERFORMANCE TEST
+===================================
+
+Test File      : large_file.bin
+File Size      : 100 MB
+
+Copy Method    : Multithreaded read/write
+Number of Threads: 2
+Buffer Size    : 8192 bytes
+
+Time Taken     : 0.136933 seconds
+Throughput     : 730.28 MB/s
+
+Verification   : SUCCESS
+
+MODULE-I BASELINE
+Time Taken     : 0.167318 seconds
+Throughput     : 597.67 MB/s
+
+MODULE-II RESULT
+Time Taken     : 0.136933 seconds
+Throughput     : 730.28 MB/s

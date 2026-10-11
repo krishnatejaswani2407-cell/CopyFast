@@ -1,0 +1,22 @@
+COPYFAST PERFORMANCE COMPARISON
+================================
+Test file: large_file.bin
+File size: 100 MB
+
+Method                 Time (seconds)   Throughput (MB/s)
+----------------------------------------------------------
+Normal Copy             0.273419         365.74
+2 Threads               0.264122         378.61
+4 Threads               0.274080         364.86
+8 Threads               0.179992         555.58
+Async I/O               1.489468          67.14
+----------------------------------------------------------
+
+Verification:
+All tested copy methods reported successful verification.
+
+Observation:
+Eight threads achieved the highest measured throughput in
+these runs. Async I/O was slower in this test because the
+current implementation waits for each read/write completion
+before proceeding to the next chunk.

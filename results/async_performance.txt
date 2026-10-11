@@ -1,0 +1,8 @@
+COPYFAST MODULE-III ASYNC I/O TEST
+==================================
+
+File Size       : 100 MB
+I/O Method      : io_uring
+Time Taken      : 2.139602 seconds
+Throughput      : 46.74 MB/s
+Verification    : SUCCESS

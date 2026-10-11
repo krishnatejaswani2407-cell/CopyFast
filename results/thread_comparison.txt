@@ -1,0 +1,23 @@
+COPYFAST MODULE-II THREAD COMPARISON
+====================================
+
+Test File       : large_file.bin
+File Size       : 100 MB
+Copy Method     : POSIX Multithreading
+
+-----------------------------------------------
+Threads    Time Taken (sec)    Throughput
+-----------------------------------------------
+2          3.590850            27.85 MB/s
+4          1.379866            72.47 MB/s
+8          7.067244            14.15 MB/s
+-----------------------------------------------
+
+Verification:
+All three copied files verified successfully.
+
+Observation:
+4 threads provided the highest throughput in this test.
+Increasing the number of threads to 8 reduced performance,
+showing that more threads do not always provide better
+performance due to concurrency overhead and system contention.
